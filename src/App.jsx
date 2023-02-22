@@ -12,10 +12,10 @@ function App() {
 
   return (
     <GridStateProvider>
-      <Home />
-      <About />
+      {/* <Home />
+      <About /> */}
       <Web />
-      <Photos />
+      {/* <Photos /> */}
       {/* <WebTest /> */}
     </GridStateProvider>
   );

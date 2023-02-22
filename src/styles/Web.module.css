@@ -43,9 +43,9 @@ h3 {
   display: grid;
   grid-gap: 0.1rem;
 
-  /* transition-property: width height;
+  transition-property: width height;
   transition-duration: 0ms;
-  transition-timing-function: ease-in; */
+  transition-timing-function: ease-in;
 }
 
 .testSpace {
@@ -57,7 +57,31 @@ h3 {
   height: 100%;
 }
 
-.b1 {
+.pageTab {
+  display: flex;
+
+  align-self: center;
+}
+.footer {
+  box-sizing: border-box;
+  height: 3.5em;
+  width: 100%;
+  /* border: 0.5px solid red; */
+}
+.second {
+  height: 100vh;
+  width: 100vw;
+  background-color: darkseagreen;
+}
+
+.projectArchiveContainer {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .b1 {
   background-color: var(--blue);
   justify-self: end;
   align-self: end;
@@ -94,15 +118,4 @@ h3 {
   background-color: var(--red);
   justify-self: start;
   align-self: start;
-}
-.footer {
-  box-sizing: border-box;
-  height: 3.5em;
-  width: 100%;
-  /* border: 0.5px solid red; */
-}
-.second {
-  height: 100vh;
-  width: 100vw;
-  background-color: darkseagreen;
-}
+} */
