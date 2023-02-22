@@ -1,0 +1,108 @@
+h3 {
+  transition: background-color 350ms ease-in;
+}
+
+.home {
+  border-bottom: 3px solid var(--red);
+}
+.home:hover {
+  background-color: var(--red);
+}
+.about {
+  border-bottom: 3px solid var(--yellow);
+  /* border-bottom: 5px solid black; */
+}
+
+.about:hover {
+  background-color: var(--yellow);
+}
+.web {
+  background-color: var(--green);
+  border-bottom: 3px solid var(--green);
+}
+.web:hover {
+  background-color: var(--green);
+}
+.photos {
+  border-bottom: 3px solid var(--blue);
+}
+.photos:hover {
+  background-color: var(--blue);
+}
+
+.gridContainer {
+  box-sizing: border-box;
+  /* border: 0.5px solid blue; */
+  padding: 0.5em;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  flex-grow: 2;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-gap: 0.1rem;
+
+  /* transition-property: width height;
+  transition-duration: 0ms;
+  transition-timing-function: ease-in; */
+}
+
+.testSpace {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.b1 {
+  background-color: var(--blue);
+  justify-self: end;
+  align-self: end;
+}
+.b1,
+.b2,
+.b3,
+.b4 > i {
+  color: rgb(243, 243, 243);
+}
+
+.b1,
+.b2,
+.b3,
+.b4 {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b2 {
+  background-color: var(--yellow);
+  justify-self: start;
+  align-self: end;
+}
+.b3 {
+  background-color: var(--green);
+  justify-self: end;
+  align-self: start;
+}
+.b4 {
+  background-color: var(--red);
+  justify-self: start;
+  align-self: start;
+}
+.footer {
+  box-sizing: border-box;
+  height: 3.5em;
+  width: 100%;
+  /* border: 0.5px solid red; */
+}
+.second {
+  height: 100vh;
+  width: 100vw;
+  background-color: darkseagreen;
+}

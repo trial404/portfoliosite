@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-top: 2rem solid;
+}
+
+h3 {
+  color: black;
+}

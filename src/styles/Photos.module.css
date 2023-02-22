@@ -1,0 +1,28 @@
+h3 {
+  transition: background-color 350ms ease-in;
+}
+.home {
+  border-bottom: 3px solid var(--red);
+}
+.home:hover {
+  background-color: var(--red);
+}
+.about {
+  border-bottom: 3px solid var(--yellow);
+}
+.about:hover {
+  background-color: var(--yellow);
+}
+.web {
+  border-bottom: 3px solid var(--green);
+}
+.web:hover {
+  background-color: var(--green);
+}
+.photos {
+  background-color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+}
+.photos:hover {
+  background-color: var(--blue);
+}
