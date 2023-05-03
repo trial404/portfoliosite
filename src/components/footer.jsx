@@ -1,4 +1,5 @@
 import "../styles/mobile/main.css";
+import FooterColor from "./mobile/FooterColor";
 
 export function Footer() {
   return (

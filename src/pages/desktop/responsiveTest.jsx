@@ -47,9 +47,9 @@ const MobileComponent = () => (
 );
 const DesktopComponent = () => (
   <>
-    <Home />
+    {/* <Home /> */}
     <About />
-    <Web />
+    {/* <Web /> */}
   </>
 );
 

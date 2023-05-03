@@ -5,6 +5,7 @@ import { GridContainer } from "../../components/GridContainer";
 import ProjectsArchive from "../../components/ProjectsArchive";
 import { toggleState } from "../../hooks/toggleState";
 import { Footer } from "../../components/footer";
+import FooterColor from "../../components/mobile/FooterColor";
 
 function Web() {
   const [activePage, setPage] = useState(true);
@@ -45,6 +46,9 @@ function Web() {
               </p>
             </div>
             <Footer />
+            <div className="footerLine">
+              <FooterColor />
+            </div>
           </div>
         </div>
       ) : (
@@ -78,6 +82,9 @@ function Web() {
               </p>
             </div>
             <Footer />
+            <div className="footerLine">
+              <FooterColor />
+            </div>
           </div>
         </div>
       )}

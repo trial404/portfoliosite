@@ -5,6 +5,7 @@ import styles from "../../styles/desktop/About.module.css";
 import "../../styles/desktop/main.css";
 import aboutPhoto from "../../images/about.png";
 import { Footer } from "../../components/footer";
+import FooterColor from "../../components/mobile/FooterColor";
 
 function About() {
   return (
@@ -50,16 +51,19 @@ function About() {
                   </p>
                 </div>
               </div>
-              <div className={styles.aboutcol2}></div>
+              {/* <div className={styles.aboutcol2}></div> */}
             </div>
             <Footer />
           </div>
-          <div className={styles.borderCol}>
+          {/* <div className={styles.borderCol}>
             <div className={styles.blue}></div>
             <div className={styles.yellow}></div>
             <div className={styles.green}></div>
             <div className={styles.red}></div>
-          </div>
+          </div> */}
+        </div>
+        <div className="footerLine">
+          <FooterColor />
         </div>
       </div>
     </div>
