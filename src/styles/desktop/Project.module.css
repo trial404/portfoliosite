@@ -9,10 +9,22 @@
   width: 100%;
   color: #ffff;
 }
+.headerText {
+  display: inline;
+  padding: 1.5rem;
+}
+.subHeaderText {
+  display: inline;
+}
 
 h3 {
   color: black;
   font-family: "Roboto Mono", monospace;
+}
+
+h5 {
+  font-family: "Roboto Mono", monospace;
+  color: #ffff;
 }
 p {
   font-family: "Roboto Mono", monospace;

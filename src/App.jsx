@@ -1,23 +1,33 @@
 import { useState } from "react";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Web from "./pages/web";
-import Photos from "./pages/photos";
-import WebTest from "./pages/webTest";
-import { GridStateContext } from "./contexts/themeContext";
+
+import ResponsiveTest from "./pages/desktop/responsiveTest";
+
+// desktop testing
+// import Home from "./pages/desktop/home";
+// import Demo from "./pages/desktop/demo";
+// import About from "./pages/desktop/about";
+// import Web from "./pages/desktop/web";
+// import Photos from "./pages/desktop/photos";
+// import WebTest from "./pages/desktop/webTest";
+
+// mobile testing
+// import MobileHome from "./pages/mobile/mobileHome";
+// import MobileAbout from "./pages/mobile/mobileAbout";
+// import MobileWeb from "./pages/mobile/mobileWeb";
+// import MobilePhotos from "./pages/mobile/mobilePhotos";
+
+// contexts
 import { GridStateProvider } from "./contexts/themeContext";
 
-function App() {
-  // const [count, setCount] = useState(0);
+// import ResponsiveTest from "./pages/desktop/responsiveTest";
 
+function App() {
   return (
-    <GridStateProvider>
-      {/* <Home />
-      <About /> */}
-      <Web />
-      {/* <Photos /> */}
-      {/* <WebTest /> */}
-    </GridStateProvider>
+    <>
+      <GridStateProvider>
+        <ResponsiveTest />
+      </GridStateProvider>
+    </>
   );
 }
 

@@ -105,6 +105,8 @@ h1 {
 }
 .colHeader {
   /* border: 2px solid black; */
+  position: relative;
+  bottom: 0;
   flex-grow: 2;
 }
 

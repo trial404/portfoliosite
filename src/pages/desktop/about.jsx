@@ -1,7 +1,10 @@
 import React from "react";
-import styles from "../styles/About.module.css";
-import "../styles/main.css";
-import aboutPhoto from "../images/about.png";
+import styles from "../../styles/desktop/About.module.css";
+
+// import PageContainer from "../../components/PageContainer";
+import "../../styles/desktop/main.css";
+import aboutPhoto from "../../images/about.png";
+import { Footer } from "../../components/footer";
 
 function About() {
   return (
@@ -49,19 +52,8 @@ function About() {
               </div>
               <div className={styles.aboutcol2}></div>
             </div>
-            <div className="footer">
-              <h3>
-                <a href="">socials</a>
-              </h3>
-              <h3>
-                <a href="">shop</a>
-              </h3>
-              <h3>
-                <a href="">email</a>
-              </h3>
-            </div>
+            <Footer />
           </div>
-
           <div className={styles.borderCol}>
             <div className={styles.blue}></div>
             <div className={styles.yellow}></div>

@@ -1,10 +1,11 @@
-import styles from "../styles/webTest.module.css";
+import styles from "../styles/desktop/Web.module.css";
+
 import { useState } from "react";
 import { GridItem } from "./GridItem";
 import { colorIds, StateStylesAll } from "../helpers/allstyles.js";
 import { allAreFalsy } from "../helpers/allAreFalsy.js";
 
-export function GridContainer({ gtr, gtc }) {
+export function GridContainer() {
   const [colorIdState, setColorIds] = useState(colorIds);
   const [gridStyle, changeGridStyle] = useState(StateStylesAll.init);
 

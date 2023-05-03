@@ -27,23 +27,34 @@ a {
 }
 
 .hero {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  background-color: #ebebeb;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100dvh;
+  /* width: 100vw; */
+  /* max-width: 100%; */
+  min-width: 650px;
+  min-height: 700px;
+  background-color: #ebebeb;
 }
 
 .container {
-  box-sizing: border-box;
-  max-width: 95%;
-  width: 90%;
-  min-height: 90%;
-  background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
+  /* */
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  /* */
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  min-width: 600px;
+  min-height: 650px;
+
+  overflow: hidden;
+  background-color: rgb(250, 250, 250);
   border-radius: 4px;
   box-shadow: 10px 10px #45454591;
 }
@@ -57,6 +68,8 @@ a {
   align-self: center;
   /* border: 0.5px solid red; */
   padding: 0.25em 0;
+  position: relative;
+  top: 0;
 }
 
 .navbar > h3 {
@@ -76,4 +89,37 @@ a {
   font-family: "Roboto Mono", monospace;
   color: #252525;
   /* border: 0.5px solid red; */
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    height: 100dvh;
+  }
+  .container {
+    height: 90%;
+    min-width: 320px;
+  }
+
+  .navbar,
+  .navLinks {
+    flex-direction: column;
+  }
+
+  .links {
+    color: white;
+  }
+
+  .home,
+  .links {
+    font-size: 12px;
+  }
+
+  .navbar > h3,
+  .footer > h3 {
+    font-size: 12px;
+  }
+  .navbar > h3 {
+    width: min-content;
+    align-self: center;
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/main.css";
-import styles from "../styles/Photos.module.css";
+import "../../styles/desktop/main.css";
+import styles from "../../styles/desktop/Photos.module.css";
 function Photos() {
   return (
     <div className="hero">

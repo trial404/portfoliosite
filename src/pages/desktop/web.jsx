@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "../styles/main.css";
-import styles from "../styles/web.module.css";
-import { GridContainer } from "../components/GridContainer";
-import ProjectsArchive from "../components/ProjectsArchive";
-import { toggleState } from "../hooks/toggleState";
+import "../../styles/desktop/main.css";
+import styles from "../../styles/desktop/Web.module.css";
+import { GridContainer } from "../../components/GridContainer";
+import ProjectsArchive from "../../components/ProjectsArchive";
+import { toggleState } from "../../hooks/toggleState";
+import { Footer } from "../../components/footer";
 
 function Web() {
   const [activePage, setPage] = useState(true);
@@ -18,7 +19,7 @@ function Web() {
       {activePage ? (
         <div className="hero" id="main">
           <div className="container">
-            <div className="navbar">
+            <div className="navbar" style={{ marginBottom: "2rem" }}>
               <h3 className={styles.home}>
                 <a href="">HOME</a>
               </h3>
@@ -32,26 +33,24 @@ function Web() {
               </h3>
             </div>
             <GridContainer />
-            <div className={styles.pageTab}>
-              <p>
+            <div className={styles.pageTab} style={{ marginTop: "2rem" }}>
+              <p style={{ borderBottom: "1px solid black" }}>
                 <strong>main</strong>
               </p>
-              <span style={{ width: "20px" }}></span>
+              <span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
               <p onClick={handleClick} style={{ cursor: "pointer" }}>
                 archive
               </p>
             </div>
-            <div className="footer">
-              <h3>socials</h3>
-              <h3>shop</h3>
-              <h3>email</h3>
-            </div>
+            <Footer />
           </div>
         </div>
       ) : (
         <div className="hero" id="archive">
           <div className="container">
-            <div className="navbar">
+            <div className="navbar" style={{ marginBottom: "2rem" }}>
               <h3 className={styles.home}>
                 <a href="">HOME</a>
               </h3>
@@ -67,20 +66,18 @@ function Web() {
             <div className={styles.projectArchiveContainer}>
               <ProjectsArchive />
             </div>
-            <div className={styles.pageTab}>
+            <div className={styles.pageTab} style={{ marginTop: "2rem" }}>
               <p onClick={handleClick} style={{ cursor: "pointer" }}>
                 main
               </p>
-              <span style={{ width: "20px" }}></span>
-              <p>
+              <span>
+                <i class="fa-solid fa-arrow-up"></i>
+              </span>
+              <p style={{ borderBottom: "1px solid black" }}>
                 <strong>archive</strong>
               </p>
             </div>
-            <div className="footer">
-              <h3>socials</h3>
-              <h3>shop</h3>
-              <h3>email</h3>
-            </div>
+            <Footer />
           </div>
         </div>
       )}

@@ -1,0 +1,13 @@
+.introHeader {
+}
+
+.introSubHeader {
+}
+.introPara {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  text-align: justify;
+  /* border: 1px solid red; */
+}
