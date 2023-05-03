@@ -52,7 +52,6 @@ a {
   max-width: 1200px;
   min-width: 600px;
   min-height: 650px;
-
   overflow: hidden;
   background-color: rgb(250, 250, 250);
   border-radius: 4px;
@@ -68,7 +67,7 @@ a {
   align-self: center;
   /* border: 0.5px solid red; */
   padding: 0.25em 0;
-  position: relative;
+  position: absolute;
   top: 0;
 }
 
@@ -80,6 +79,18 @@ a {
   margin: 0.25em;
 }
 
+.contentContainer {
+  display: flex;
+  flex-grow: 2;
+  height: 100%;
+  width: 95%;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3.5em 0.5em;
+}
+
 .footer {
   display: flex;
   height: 3.5em;
@@ -88,7 +99,8 @@ a {
   justify-content: space-evenly;
   font-family: "Roboto Mono", monospace;
   color: #252525;
-  /* border: 0.5px solid red; */
+  position: absolute;
+  bottom: 0;
 }
 
 .footerLine {
@@ -97,6 +109,7 @@ a {
   margin-top: 1.5rem;
   width: 100%;
   height: 0.25rem;
+  position: absolute;
   z-index: 1;
 }
 

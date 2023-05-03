@@ -5,7 +5,7 @@ import React from "react";
 import Home from "./home";
 import About from "./about";
 import Web from "./web";
-import Demo from "./demo";
+import Photos from "./photos";
 
 import MobileHome from "../mobile/mobileHome";
 import MobileAbout from "../mobile/mobileAbout";
@@ -49,13 +49,14 @@ const DesktopComponent = () => (
   <>
     {/* <Home /> */}
     <About />
-    {/* <Web /> */}
+    <Web />
+    {/* <Photos /> */}
   </>
 );
 
 const MyComponent = () => {
   const { width } = useViewport();
-  const breakpoint = 800;
+  const breakpoint = 700;
 
   return width < breakpoint ? <MobileComponent /> : <DesktopComponent />;
 };

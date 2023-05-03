@@ -28,39 +28,26 @@ function About() {
               </h3>
               ''
             </div>
-            <div className={styles.aboutParent}>
-              <div className={styles.aboutcol1}>
-                <img src={aboutPhoto} alt="colors" />
-                <div className={styles.aboutText}>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Bibendum arcu vitae elementum curabitur vitae nunc
-                    sed velit dignissim.
-                  </p>
-                  <p>
-                    vitae nunc sed velit dignissim, consectetur adipiscing elit,
-                    sed do eiusmod tempor etur adipiscing el incididunt ut
-                    labore et dolore magna aliqua. Bibendum arcusmod tempor
-                    incididunt vitae nunc sed velit dignissim.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Bibendum arcu.
-                  </p>
-                </div>
+            <div className="contentContainer">
+              <h1 className={styles.introHeader}>Hi,I'm David.👋</h1>
+              <img src={aboutPhoto} alt="photo-of-me" />
+              <h3 clawwssName={styles.introSubHeader}>
+                Heres a bit about me..
+              </h3>
+              <div className={styles.aboutText}>
+                <p>
+                  I'm an aerospace manufacturing engineer turn developer. I love
+                  to learn and master new skills.
+                </p>
+                <p>
+                  Welcome to my portofolio site showcasing the things I've been
+                  working on. You can get in touch with me through any of the
+                  links below with my socials or email.
+                </p>
               </div>
-              {/* <div className={styles.aboutcol2}></div> */}
             </div>
             <Footer />
           </div>
-          {/* <div className={styles.borderCol}>
-            <div className={styles.blue}></div>
-            <div className={styles.yellow}></div>
-            <div className={styles.green}></div>
-            <div className={styles.red}></div>
-          </div> */}
         </div>
         <div className="footerLine">
           <FooterColor />
