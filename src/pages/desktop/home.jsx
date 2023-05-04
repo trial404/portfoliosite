@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/desktop/main.css";
 import styles from "../../styles/desktop/Home.module.css";
+import vectorLine from "../../images/vectorline.png";
 
 function Home() {
   return (
@@ -38,7 +39,6 @@ function Home() {
                 dictates what amount of the available space inside the flex
                 container the item should take up.
               </p>
-
               <p>
                 If all items have flex-grow set to 1, the remaining space in the
                 container will be distributed equally to all children. If one of
@@ -46,6 +46,13 @@ function Home() {
               </p>
             </div>
           </div>
+        </div>
+        {/* <img src={vectorLine} className={styles.vector} alt="" /> */}
+        <div className={styles.squares}>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
+          <div className={styles.square}></div>
         </div>
       </div>
     </div>

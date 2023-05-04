@@ -5,6 +5,9 @@ h1 {
 .h3 {
   transition: background-color 350ms ease-in;
 }
+
+/* custom navbar styling  */
+
 .navHome {
   background-color: var(--red);
   border-bottom: 3px solid var(--red);
@@ -39,11 +42,6 @@ h1 {
   margin: 0.25em;
 }
 
-.container.home {
-  background-image: url("../images/background.jpg");
-  background-size: cover;
-}
-
 .navbar.home {
   justify-content: space-between;
 }
@@ -54,6 +52,11 @@ h1 {
   text-align: center;
   padding: 0.25em 0;
   margin: 0.25em;
+}
+
+.container.home {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
 }
 
 .between {
@@ -108,6 +111,7 @@ h1 {
   position: relative;
   bottom: 0;
   flex-grow: 2;
+  z-index: 1;
 }
 
 .colHeader > h1 {
@@ -125,10 +129,50 @@ h1 {
   padding: 0 2em;
   font-family: "Roboto Mono", monospace;
   width: 80%;
+  z-index: 1;
 }
 
 .container.second {
   height: 90%;
   width: 90%;
   text-align: center;
+}
+
+.vector {
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  bottom: -1rem;
+}
+.squares {
+  /* border: 2px solid red; */
+  display: flex;
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  z-index: 0;
+}
+.square {
+  margin: 0.5rem;
+
+  width: 250px;
+  height: 250px;
+}
+
+div.squares div:nth-child(4) {
+  border-radius: 50%;
+  background: #85b6ff;
+}
+
+div.squares div:nth-child(3) {
+  background: #ffee58;
+}
+
+div.squares div:nth-child(2) {
+  border-radius: 50%;
+  background: #ff7e76;
+}
+
+div.squares div:nth-child(1) {
+  background: #4ecb71;
 }
